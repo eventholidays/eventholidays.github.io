@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Holidays | India & International Tour Packages</title>
+  <meta name="description" content="Event Holidays — Premium tour packages across India & the world. Visa assistance, air ticketing, hotel booking, and luxury transport all under one roof.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <i class="fas fa-compass"></i>
+        <span>Event Holidays</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"         class="nav-link active">Home</a></li>
+        <li><a href="#services"     class="nav-link">Services</a></li>
+        <li><a href="#packages"     class="nav-link">Packages</a></li>
+        <li><a href="#trips"        class="nav-link">Our Trips</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="btn-primary nav-cta">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge"><i class="fas fa-star"></i> Trusted by 10,000+ Happy Travellers</span>
+      <h1 class="hero-title">
+        Discover the World,<br>
+        <span class="gradient-text">One Journey at a Time</span>
+      </h1>
+      <p class="hero-subtitle">Premium tour packages across India & the globe. Visa assistance, air ticketing, luxury transport — all under one roof.</p>
+      <div class="hero-cta">
+        <a href="#packages" class="btn-primary btn-lg">Explore Packages</a>
+        <a href="#contact" class="btn-outline btn-lg"><i class="fas fa-phone-alt"></i> Talk to an Expert</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="10000">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Happy Travellers</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="150">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Destinations</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="12">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Satisfaction Rate</span>
+        </div>
+      </div>
+    </div>
+    <a href="#services" class="hero-scroll" aria-label="Scroll down">
+      <span>Scroll Down</span>
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Our <span class="accent">Services</span></h2>
+        <p class="section-subtitle">End-to-end travel solutions for a seamless journey — whether across India or around the globe.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal" style="--ic:#e67e22;--ib:rgba(230,126,34,.12)">
+          <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
+          <h3>Air Ticketing</h3>
+          <p>Domestic & international flight bookings at the best fares. We compare hundreds of airlines to find your perfect deal.</p>
+          <a href="#contact" class="service-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" style="--ic:#2ecc71;--ib:rgba(46,204,113,.12)">
+          <div class="service-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h3>Tour Packages</h3>
+          <p>Curated India & international tours with guided experiences, handpicked hotels, and memorable itineraries.</p>
+          <a href="#packages" class="service-link">View Packages <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" style="--ic:#3498db;--ib:rgba(52,152,219,.12)">
+          <div class="service-icon"><i class="fas fa-passport"></i></div>
+          <h3>Visa Assistance</h3>
+          <p>Hassle-free visa processing for 50+ countries. We handle documentation, applications, and follow-ups for you.</p>
+          <a href="#contact" class="service-link">Get Visa Help <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" style="--ic:#9b59b6;--ib:rgba(155,89,182,.12)">
+          <div class="service-icon"><i class="fas fa-car-side"></i></div>
+          <h3>Transportation</h3>
+          <p>Airport transfers, cab hire, luxury coaches, and private vehicles. Travel comfortably from start to finish.</p>
+          <a href="#contact" class="service-link">Book Transport <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" style="--ic:#e74c3c;--ib:rgba(231,76,60,.12)">
+          <div class="service-icon"><i class="fas fa-hotel"></i></div>
+          <h3>Hotel Booking</h3>
+          <p>Budget to luxury stays worldwide. From cozy homestays to 5-star resorts — we find the perfect bed for you.</p>
+          <a href="#contact" class="service-link">Find Hotels <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card reveal" style="--ic:#1abc9c;--ib:rgba(26,188,156,.12)">
+          <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Travel Insurance</h3>
+          <p>Comprehensive plans covering medical emergencies, trip cancellations, and baggage loss. Travel worry-free.</p>
+          <a href="#contact" class="service-link">Get Insured <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PACKAGES ============ -->
+  <section class="section packages bg-alt" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Handpicked for You</span>
+        <h2 class="section-title">Popular <span class="accent">Packages</span></h2>
+        <p class="section-subtitle">From the snow-capped Himalayas to the beaches of Bali — explore our most-loved tour packages.</p>
+      </div>
+
+      <div class="packages-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="india">India</button>
+        <button class="filter-btn" data-filter="international">International</button>
+      </div>
+
+      <div class="packages-grid" id="packagesGrid">
+
+        <!-- Dubai -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=480&h=280&fit=crop" alt="Dubai" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Dubai</h3>
+            <p>Glittering skyline, Burj Khalifa, desert safaris & world-class luxury in the UAE.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Visa Assistance</span>
+              <span><i class="fas fa-check"></i> Desert Safari</span>
+              <span><i class="fas fa-check"></i> City Tour</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Europe -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=480&h=280&fit=crop" alt="Europe" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Europe</h3>
+            <p>Paris, Swiss Alps, Amsterdam canals & Rome — iconic landmarks across multiple countries.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Schengen Visa</span>
+              <span><i class="fas fa-check"></i> Rail Pass</span>
+              <span><i class="fas fa-check"></i> Guided Tours</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Singapore -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=480&h=280&fit=crop" alt="Singapore" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Singapore</h3>
+            <p>Futuristic Gardens by the Bay, Marina Bay Sands & world-class hawker food in the Lion City.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Easy Visa</span>
+              <span><i class="fas fa-check"></i> Gardens by Bay</span>
+              <span><i class="fas fa-check"></i> Night Safari</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Maldives -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=480&h=280&fit=crop" alt="Maldives" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Maldives</h3>
+            <p>Turquoise lagoons, overwater bungalows & vibrant coral reefs in the Indian Ocean paradise.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Water Villa</span>
+              <span><i class="fas fa-check"></i> Snorkelling</span>
+              <span><i class="fas fa-check"></i> All-Inclusive</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thailand -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=480&h=280&fit=crop" alt="Thailand" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Thailand</h3>
+            <p>Bangkok temples, Chiang Mai culture & Phi Phi island beaches at unbeatable value.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Visa on Arrival</span>
+              <span><i class="fas fa-check"></i> Island Hopping</span>
+              <span><i class="fas fa-check"></i> Street Food Tour</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vietnam -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=480&h=280&fit=crop" alt="Vietnam" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Vietnam</h3>
+            <p>Ha Long Bay limestone karsts, Hoi An lantern streets & the vibrant buzz of Hanoi & Saigon.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Easy Visa</span>
+              <span><i class="fas fa-check"></i> Ha Long Bay Cruise</span>
+              <span><i class="fas fa-check"></i> Night Markets</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- India -->
+        <div class="package-card reveal" data-category="india">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=480&h=280&fit=crop&crop=center" alt="India" loading="lazy">
+            <span class="package-badge badge-india">India</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>India</h3>
+            <p>From the Himalayas to Kerala backwaters — experience every corner of incredible India.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> North & South</span>
+              <span><i class="fas fa-check"></i> Custom Routes</span>
+              <span><i class="fas fa-check"></i> Group & Private</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indonesia -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=480&h=280&fit=crop" alt="Indonesia" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Indonesia</h3>
+            <p>Bali temples, Komodo dragons, Yogyakarta volcanoes & the pristine beaches of Lombok.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Visa on Arrival</span>
+              <span><i class="fas fa-check"></i> Bali Private Villa</span>
+              <span><i class="fas fa-check"></i> Island Hopping</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Baku -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=280&fit=crop" alt="Baku, Azerbaijan" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Baku, Azerbaijan</h3>
+            <p>The City of Winds — ancient Old City walls, iconic Flame Towers & serene Caspian Sea views.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Easy Visa</span>
+              <span><i class="fas fa-check"></i> Old City Walk</span>
+              <span><i class="fas fa-check"></i> Flame Towers</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Turkey -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=480&h=280&fit=crop" alt="Turkey" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Turkey</h3>
+            <p>Istanbul's minarets, Cappadocia balloon rides & Pamukkale thermal pools across two continents.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Easy Visa</span>
+              <span><i class="fas fa-check"></i> Hot Air Balloon</span>
+              <span><i class="fas fa-check"></i> Turkish Cuisine</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Greece -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1555993539-1732b0258235?w=480&h=280&fit=crop" alt="Greece" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Greece</h3>
+            <p>Santorini sunsets, Athens Acropolis, Mykonos beaches & legendary Mediterranean flavours.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Schengen Visa</span>
+              <span><i class="fas fa-check"></i> Island Hopping</span>
+              <span><i class="fas fa-check"></i> Santorini Stay</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Japan -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=480&h=280&fit=crop" alt="Japan" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Japan</h3>
+            <p>Mount Fuji, cherry blossoms, ancient Kyoto temples & the neon-lit streets of Tokyo await.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Visa Assistance</span>
+              <span><i class="fas fa-check"></i> Bullet Train Pass</span>
+              <span><i class="fas fa-check"></i> Tea Ceremony</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Malaysia -->
+        <div class="package-card reveal" data-category="international">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=480&h=280&fit=crop" alt="Malaysia" loading="lazy">
+            <span class="package-badge badge-intl">International</span>
+            <div class="package-overlay"><a href="#contact" class="btn-white">Enquire</a></div>
+          </div>
+          <div class="package-body">
+            <h3>Malaysia</h3>
+            <p>Petronas Towers, Cameron Highlands, Langkawi beaches & incredible street food culture.</p>
+            <div class="package-features">
+              <span><i class="fas fa-check"></i> Visa Free</span>
+              <span><i class="fas fa-check"></i> Langkawi Island</span>
+              <span><i class="fas fa-check"></i> KL City Tour</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="from">Price on</span><span class="price">Enquiry</span></div>
+              <a href="#contact" class="btn-primary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /packages-grid -->
+    </div>
+  </section>
+
+  <!-- ============ GROUP TRIPS ============ -->
+  <section class="section trips" id="trips">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Real Journeys</span>
+        <h2 class="section-title">Our <span class="accent">Happy Groups</span></h2>
+        <p class="section-subtitle">Real memories, real smiles — snapshots from the many wonderful groups who trusted Event Holidays with their dream trips.</p>
+      </div>
+      <div class="trips-grid">
+
+        <div class="trip-item reveal trip-wide">
+          <img src="trips/malaysia.jpeg" alt="Event Holidays Group — Malaysia" loading="lazy">
+          <div class="trip-caption">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Malaysia</span>
+          </div>
+        </div>
+
+        <div class="trip-item reveal">
+          <img src="trips/dubai.jpeg" alt="Event Holidays Group — Dubai, UAE" loading="lazy">
+          <div class="trip-caption">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Dubai, UAE</span>
+          </div>
+        </div>
+
+        <div class="trip-item reveal">
+          <img src="trips/japan.jpeg" alt="Event Holidays Group — Japan" loading="lazy">
+          <div class="trip-caption">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Japan</span>
+          </div>
+        </div>
+
+        <div class="trip-item reveal">
+          <img src="trips/vietnam.jpeg" alt="Event Holidays Group — Vietnam" loading="lazy">
+          <div class="trip-caption">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Vietnam</span>
+          </div>
+        </div>
+
+        <div class="trip-item reveal">
+          <img src="trips/almaty.jpeg" alt="Event Holidays Group — Almaty, Kazakhstan" loading="lazy">
+          <div class="trip-caption">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Almaty, Kazakhstan</span>
+          </div>
+        </div>
+
+        <div class="trip-item reveal">
+          <img src="trips/statue_of_unity_india.jpeg" alt="Event Holidays Group — Statue of Unity, India" loading="lazy">
+          <div class="trip-caption">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Statue of Unity, India</span>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="#contact" class="btn-primary"><i class="fas fa-users"></i> Join Our Next Group Tour</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="section why-us">
+    <div class="container why-container">
+      <div class="why-content reveal">
+        <span class="section-tag">Why Event Holidays</span>
+        <h2 class="section-title">Travel Smarter, <span class="accent">Travel Better</span></h2>
+        <p>We've been crafting unforgettable journeys for over a decade. Here's why thousands of travellers choose us year after year.</p>
+        <ul class="why-list">
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Personalised Itineraries</strong>
+              <p>Every trip is tailored to your preferences, travel style, and budget.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>24/7 Support</strong>
+              <p>Our team is available round the clock — before, during, and after your trip.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Best Price Guarantee</strong>
+              <p>We match or beat any comparable quote. No hidden fees, ever.</p>
+            </div>
+          </li>
+          <!-- <li>
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>IATA Accredited Agency</strong>
+              <p>Fully licensed with IATA accreditation and government-certified credentials.</p>
+            </div>
+          </li> -->
+        </ul>
+        <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Plan My Trip</a>
+      </div>
+      <div class="why-image reveal">
+        <div class="why-img-wrap">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=680&fit=crop" alt="Happy travellers enjoying their journey">
+          <div class="why-badge">
+            <div class="badge-num">4.9 ⭐</div>
+            <div class="badge-txt">Avg Rating<br><small>Based on 2,500+ reviews</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section testimonials bg-alt" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What Our Travellers Say</span>
+        <h2 class="section-title">Real <span class="accent">Reviews</span></h2>
+        <p class="section-subtitle">Don't just take our word for it — hear from thousands of happy travellers who've journeyed with us.</p>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The Golden Triangle tour was absolutely magical! Event Holidays took care of every single detail — from the flights to the last hotel checkout. Our guide was knowledgeable and genuinely passionate."</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma">
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Mumbai, India</span>
+                <span class="tour-tag">Golden Triangle Tour</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Our Dubai honeymoon was everything we dreamed of and more! The team arranged visa, transfers, and surprised us with a romantic dinner at the Burj Khalifa. Absolutely phenomenal service."</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul & Neha Verma">
+              <div>
+                <strong>Rahul & Neha Verma</strong>
+                <span>Delhi, India</span>
+                <span class="tour-tag">Dubai Honeymoon</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"I've travelled with many agencies but Event Holidays is in a different league. The Bali package was incredible value — private villa, a personal driver, and an itinerary perfect for relaxation."</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Anjali Menon">
+              <div>
+                <strong>Anjali Menon</strong>
+                <span>Bengaluru, India</span>
+                <span class="tour-tag">Bali Paradise</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Ladakh was the adventure of a lifetime. Well-organised, brilliant team energy, and the scenery was absolutely out of this world. Camping under the Himalayan stars — simply priceless!"</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/58.jpg" alt="Vikram Singh">
+              <div>
+                <strong>Vikram Singh</strong>
+                <span>Chandigarh, India</span>
+                <span class="tour-tag">Ladakh Adventure</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Travelling to Europe solo felt daunting, but the team guided me through visa applications, transfers, and gave brilliant restaurant tips. Absolutely everything was perfect. Will book again!"</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Sarah Mitchell">
+              <div>
+                <strong>Sarah Mitchell</strong>
+                <span>London, UK</span>
+                <span class="tour-tag">European Dream</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Thailand with Event Holidays was phenomenal. The balance of city exploration, cultural experiences, and beach time was perfect. Already planning my next trip to Japan through them!"</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Arjun Patel">
+              <div>
+                <strong>Arjun Patel</strong>
+                <span>Ahmedabad, India</span>
+                <span class="tour-tag">Thailand Explorer</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /track -->
+      </div><!-- /slider -->
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextBtn" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact">
+    <div class="container contact-container">
+
+      <div class="contact-info reveal">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Plan Your <span class="accent">Dream Trip</span></h2>
+        <p>Have a destination in mind? Let our experts craft the perfect itinerary for you. Reach out and we'll get back within 2 hours.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <strong>Call Us</strong>
+              <span>+91 98283 64494 </span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email Us</strong>
+              <span>indigo.holidays@yahoo.co.in</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Visit Us</strong>
+              <span>D-5A Jaipur Towers, Jaipur</span>
+              <span>302003, Rajasthan, India</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Office Hours</strong>
+              <span>Mon – Sat: 9:00 AM – 7:00 PM</span>
+              <span>Sun: 10:00 AM – 5:00 PM</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div> -->
+      </div><!-- /contact-info -->
+
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Send Us a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="cf-name" name="name" placeholder="Your full name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+91 XXXXX XXXXX" required autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="cf-service">Service Interested In</label>
+              <select id="cf-service" name="service">
+                <option value="">Select a service</option>
+                <option value="tour">Tour Package</option>
+                <option value="ticketing">Air Ticketing</option>
+                <option value="visa">Visa Assistance</option>
+                <option value="transport">Transportation</option>
+                <option value="hotel">Hotel Booking</option>
+                <option value="insurance">Travel Insurance</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-destination">Destination</label>
+              <input type="text" id="cf-destination" name="destination" placeholder="Where do you want to go?">
+            </div>
+            <div class="form-group">
+              <label for="cf-travellers">No. of Travellers</label>
+              <input type="number" id="cf-travellers" name="travellers" placeholder="e.g. 2" min="1" max="99">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="Tell us about your dream trip, travel dates, budget, or special requirements…"></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i>
+            <strong>Message sent successfully!</strong>
+            <p>Our team will contact you within 2 hours.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:1rem">
+          <i class="fas fa-compass"></i>
+          <span>Event Holidays</span>
+        </div>
+        <p>Your trusted travel partner for over 12 years. Creating memories across India and beyond — one journey at a time.</p>
+        <!-- <div class="social-links" style="margin-top:1.25rem">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div> -->
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#services">Air Ticketing</a></li>
+          <li><a href="#services">Tour Packages</a></li>
+          <li><a href="#services">Visa Assistance</a></li>
+          <li><a href="#services">Transportation</a></li>
+          <li><a href="#services">Hotel Booking</a></li>
+          <li><a href="#services">Travel Insurance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Get Travel Deals</h4>
+        <p>Subscribe for exclusive offers and travel inspiration.</p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input type="email" placeholder="your@email.com" required aria-label="Email for newsletter">
+          <button type="submit" aria-label="Subscribe"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <div class="footer-badges">
+          <!-- <span><i class="fas fa-award"></i> IATA Accredited</span>
+          <span><i class="fas fa-shield-alt"></i> ISO Certified</span> -->
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Event Holidays. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>Made with ❤️ in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/919828364494" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
