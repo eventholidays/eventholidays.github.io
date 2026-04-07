@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="Event Holidays logo">
+  <defs>
+    <linearGradient id="compassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a72ff"/>
+      <stop offset="100%" style="stop-color:#7c9fff"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a72ff"/>
+      <stop offset="100%" style="stop-color:#7c9fff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Compass circle background -->
+  <circle cx="40" cy="40" r="34" fill="url(#compassGrad)" opacity="0.12"/>
+  <circle cx="40" cy="40" r="28" fill="none" stroke="url(#compassGrad)" stroke-width="2"/>
+
+  <!-- Compass needles -->
+  <!-- North needle (blue) -->
+  <polygon points="40,16 44,38 40,34 36,38" fill="#4a72ff"/>
+  <!-- South needle (grey) -->
+  <polygon points="40,64 44,42 40,46 36,42" fill="#c5d5fb"/>
+  <!-- East & West ticks -->
+  <line x1="12" y1="40" x2="18" y2="40" stroke="#4a72ff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="62" y1="40" x2="68" y2="40" stroke="#4a72ff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Center dot -->
+  <circle cx="40" cy="40" r="3.5" fill="#4a72ff"/>
+
+  <!-- Brand name -->
+  <text x="88" y="35" font-family="Urbanist, -apple-system, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5" fill="#454545">Event</text>
+  <text x="88" y="60" font-family="Urbanist, -apple-system, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5" fill="url(#textGrad)">Holidays</text>
+
+  <!-- Tagline dot separator -->
+  <text x="88" y="72" font-family="Urbanist, -apple-system, sans-serif" font-size="9" font-weight="500" letter-spacing="2.5" fill="#808080">JAIPUR · INDIA</text>
+</svg>

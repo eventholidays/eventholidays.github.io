@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="Event Holidays logo – dark version">
+  <defs>
+    <linearGradient id="compassGradD" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b8fff"/>
+      <stop offset="100%" style="stop-color:#a5bcff"/>
+    </linearGradient>
+    <linearGradient id="textGradD" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6b8fff"/>
+      <stop offset="100%" style="stop-color:#a5bcff"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="40" cy="40" r="34" fill="url(#compassGradD)" opacity="0.15"/>
+  <circle cx="40" cy="40" r="28" fill="none" stroke="url(#compassGradD)" stroke-width="2"/>
+  <polygon points="40,16 44,38 40,34 36,38" fill="#6b8fff"/>
+  <polygon points="40,64 44,42 40,46 36,42" fill="#334166"/>
+  <line x1="12" y1="40" x2="18" y2="40" stroke="#6b8fff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="62" y1="40" x2="68" y2="40" stroke="#6b8fff" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="40" cy="40" r="3.5" fill="#6b8fff"/>
+
+  <text x="88" y="35" font-family="Urbanist, -apple-system, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5" fill="#e6edf3">Event</text>
+  <text x="88" y="60" font-family="Urbanist, -apple-system, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5" fill="url(#textGradD)">Holidays</text>
+  <text x="88" y="72" font-family="Urbanist, -apple-system, sans-serif" font-size="9" font-weight="500" letter-spacing="2.5" fill="#8b949e">JAIPUR · INDIA</text>
+</svg>

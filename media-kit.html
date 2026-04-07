@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Kit — Event Holidays</title>
+  <meta name="description" content="Official media kit for Event Holidays, Jaipur. Download logos, brand guidelines, and company information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* ── Variables ── */
+    :root {
+      --bg:         #fafbff;
+      --bg2:        #f0f4ff;
+      --bg-card:    #ffffff;
+      --text:       #454545;
+      --text2:      #808080;
+      --accent:     #4a72ff;
+      --accent-t:   rgba(74,114,255,.1);
+      --accent-d:   #3558e6;
+      --border:     #d3d3d3;
+      --shadow:     0 4px 24px rgba(74,114,255,.1);
+      --shadow-lg:  0 16px 60px rgba(74,114,255,.16);
+      --radius:     12px;
+      --radius-lg:  20px;
+      --font:       'Urbanist', -apple-system, sans-serif;
+    }
+    [data-theme="dark"] {
+      --bg:         #0d1117;
+      --bg2:        #161b22;
+      --bg-card:    #1c2128;
+      --text:       #e6edf3;
+      --text2:      #8b949e;
+      --accent:     #6b8fff;
+      --accent-t:   rgba(107,143,255,.12);
+      --accent-d:   #4a72ff;
+      --border:     #30363d;
+      --shadow:     0 4px 24px rgba(0,0,0,.3);
+      --shadow-lg:  0 16px 60px rgba(0,0,0,.5);
+    }
+
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      transition: background .3s, color .3s;
+    }
+    a { text-decoration:none; color:inherit; }
+    img { max-width:100%; display:block; }
+
+    /* ── NAV ── */
+    .nav {
+      position: sticky; top:0; z-index:100;
+      background: rgba(250,251,255,.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: .9rem 1.5rem;
+      display: flex; align-items:center; justify-content:space-between; gap:1rem;
+    }
+    [data-theme="dark"] .nav { background: rgba(13,17,23,.95); }
+    .nav-logo {
+      display:flex; align-items:center; gap:.6rem;
+      font-size:1.15rem; font-weight:800; color:var(--text);
+    }
+    .nav-logo i { color:var(--accent); font-size:1.3rem; }
+    .nav-right { display:flex; align-items:center; gap:.75rem; }
+    .btn { display:inline-flex; align-items:center; gap:.45rem; padding:.6rem 1.3rem; border-radius:50px; font-weight:600; font-size:.88rem; transition:all .25s; border:2px solid transparent; cursor:pointer; font-family:var(--font); }
+    .btn-primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+    .btn-primary:hover { background:var(--accent-d); border-color:var(--accent-d); transform:translateY(-2px); box-shadow:0 8px 24px rgba(74,114,255,.35); }
+    .btn-outline { background:transparent; color:var(--text); border-color:var(--border); }
+    .btn-outline:hover { border-color:var(--accent); color:var(--accent); }
+    .theme-btn {
+      width:38px; height:38px; border-radius:50%; border:1.5px solid var(--border);
+      background:var(--bg2); color:var(--text); font-size:.95rem;
+      display:flex; align-items:center; justify-content:center; cursor:pointer;
+      transition:all .25s;
+    }
+    .theme-btn:hover { background:var(--accent-t); color:var(--accent); border-color:var(--accent); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #0d1b4b 0%, #1a2d6b 50%, #0a1230 100%);
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content:'';
+      position:absolute; inset:0;
+      background: radial-gradient(ellipse 80% 60% at 50% 120%, rgba(74,114,255,.35) 0%, transparent 70%);
+    }
+    .hero-inner { position:relative; z-index:1; max-width:700px; margin:0 auto; }
+    .hero-tag {
+      display:inline-block; background:rgba(74,114,255,.25); color:#c5d5fb;
+      padding:.3rem 1.1rem; border-radius:50px; font-size:.78rem; font-weight:700;
+      letter-spacing:.8px; text-transform:uppercase; margin-bottom:1.5rem; border:1px solid rgba(107,143,255,.3);
+    }
+    .hero h1 { font-size:clamp(2rem,5vw,3.2rem); font-weight:800; color:#fff; margin-bottom:1rem; letter-spacing:-.03em; }
+    .hero p  { color:rgba(255,255,255,.72); font-size:1.05rem; max-width:520px; margin:0 auto 2.5rem; }
+    .hero-logo { margin: 0 auto 2.5rem; width:fit-content; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.15); border-radius:16px; padding:1.5rem 2.5rem; }
+    .hero-logo img { height:70px; width:auto; }
+    .hero-cta { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+
+    /* ── CONTAINER ── */
+    .container { max-width:1100px; margin:0 auto; padding:0 1.5rem; }
+    .section { padding:4.5rem 0; }
+    .section-alt { background:var(--bg2); }
+
+    /* ── SECTION HEADER ── */
+    .sh { margin-bottom:2.5rem; }
+    .sh-tag {
+      display:inline-block; background:var(--accent-t); color:var(--accent);
+      padding:.28rem 1rem; border-radius:50px; font-size:.76rem; font-weight:700;
+      letter-spacing:.7px; text-transform:uppercase; margin-bottom:.65rem;
+    }
+    .sh h2 { font-size:clamp(1.55rem,3vw,2.1rem); font-weight:800; letter-spacing:-.02em; margin-bottom:.5rem; }
+    .sh p  { color:var(--text2); font-size:.96rem; max-width:600px; }
+
+    /* ── ABOUT GRID ── */
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+    .about-card {
+      background:var(--bg-card); border:1.5px solid var(--border);
+      border-radius:var(--radius-lg); padding:2rem;
+      box-shadow:var(--shadow);
+    }
+    .about-card h3 { font-size:1.05rem; font-weight:700; margin-bottom:1rem; display:flex; align-items:center; gap:.6rem; }
+    .about-card h3 i { color:var(--accent); font-size:1rem; }
+    .fact-list { display:flex; flex-direction:column; gap:.75rem; }
+    .fact-item { display:flex; justify-content:space-between; align-items:center; padding:.6rem 0; border-bottom:1px solid var(--border); }
+    .fact-item:last-child { border:none; }
+    .fact-label { font-size:.88rem; color:var(--text2); }
+    .fact-value { font-size:.92rem; font-weight:700; color:var(--text); text-align:right; max-width:55%; }
+    .stat-row { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
+    .stat-box { background:var(--bg2); border-radius:var(--radius); padding:1.1rem; text-align:center; }
+    .stat-box .num { font-size:1.8rem; font-weight:800; color:var(--accent); line-height:1; }
+    .stat-box .lbl { font-size:.78rem; color:var(--text2); margin-top:.25rem; }
+
+    /* ── LOGO SECTION ── */
+    .logo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+    .logo-card {
+      background:var(--bg-card); border:1.5px solid var(--border);
+      border-radius:var(--radius-lg); padding:2rem 1.5rem 1.5rem;
+      box-shadow:var(--shadow); text-align:center;
+      display:flex; flex-direction:column; align-items:center; gap:1.25rem;
+    }
+    .logo-preview {
+      width:100%; border-radius:var(--radius); padding:1.5rem;
+      display:flex; align-items:center; justify-content:center;
+      min-height:100px;
+    }
+    .logo-preview.light-bg { background:#ffffff; border:1px solid var(--border); }
+    .logo-preview.dark-bg  { background:#0d1117; border:1px solid #30363d; }
+    .logo-preview.blue-bg  { background:linear-gradient(135deg,#1a2d6b,#0a1230); }
+    .logo-preview img, .logo-preview svg { max-height:70px; width:auto; }
+    .logo-card h4   { font-size:.95rem; font-weight:700; }
+    .logo-card p    { font-size:.8rem; color:var(--text2); }
+    .logo-card .btns{ display:flex; gap:.5rem; flex-wrap:wrap; justify-content:center; }
+    .dl-btn {
+      display:inline-flex; align-items:center; gap:.4rem;
+      padding:.42rem .95rem; border-radius:50px; font-size:.78rem; font-weight:600;
+      background:var(--accent-t); color:var(--accent); border:1.5px solid var(--accent);
+      cursor:pointer; text-decoration:none; transition:all .25s;
+    }
+    .dl-btn:hover { background:var(--accent); color:#fff; }
+
+    /* ── COLORS ── */
+    .colors-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:1rem; }
+    .color-swatch {
+      border-radius:var(--radius); overflow:hidden;
+      box-shadow:var(--shadow); border:1.5px solid var(--border);
+    }
+    .swatch-block { height:80px; }
+    .swatch-info  { background:var(--bg-card); padding:.75rem; }
+    .swatch-name  { font-size:.82rem; font-weight:700; display:block; }
+    .swatch-hex   { font-size:.74rem; color:var(--text2); display:block; margin-top:.15rem; font-family:monospace; }
+    .swatch-use   { font-size:.7rem;  color:var(--text2); margin-top:.2rem; }
+
+    /* ── TYPOGRAPHY ── */
+    .type-showcase {
+      background:var(--bg-card); border:1.5px solid var(--border);
+      border-radius:var(--radius-lg); padding:2.5rem; box-shadow:var(--shadow);
+      display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;
+    }
+    .type-block + .type-block { border-left:2px solid var(--border); padding-left:2.5rem; }
+    .type-label { font-size:.75rem; font-weight:700; letter-spacing:.8px; text-transform:uppercase; color:var(--text2); margin-bottom:1rem; }
+    .type-sample-xl   { font-size:3rem;  font-weight:800; letter-spacing:-.04em; line-height:1; color:var(--accent); }
+    .type-sample-h1   { font-size:2rem;  font-weight:800; letter-spacing:-.03em; line-height:1.2; margin-top:.75rem; }
+    .type-sample-h2   { font-size:1.5rem; font-weight:700; letter-spacing:-.02em; margin-top:.5rem; }
+    .type-sample-body { font-size:1rem;  font-weight:400; margin-top:.75rem; color:var(--text2); line-height:1.65; }
+    .type-sample-sm   { font-size:.82rem; font-weight:600; letter-spacing:.6px; text-transform:uppercase; margin-top:.5rem; color:var(--text2); }
+    .weight-row { display:flex; flex-direction:column; gap:.5rem; margin-top:.5rem; }
+    .weight-item { display:flex; align-items:baseline; gap:1rem; }
+    .weight-item span:first-child { font-size:.75rem; color:var(--text2); min-width:50px; }
+    .weight-item span:last-child  { font-size:1.1rem; }
+
+    /* ── VOICE / BRAND VALUES ── */
+    .values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+    .value-card {
+      background:var(--bg-card); border:1.5px solid var(--border);
+      border-radius:var(--radius-lg); padding:1.75rem;
+      box-shadow:var(--shadow); position:relative; overflow:hidden;
+    }
+    .value-card::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:3px;
+      background:var(--accent); transform:scaleX(0); transform-origin:left; transition:.3s;
+    }
+    .value-card:hover::before { transform:scaleX(1); }
+    .value-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-lg); }
+    .value-icon { font-size:1.6rem; margin-bottom:.85rem; }
+    .value-card h4 { font-size:1rem; font-weight:700; margin-bottom:.5rem; }
+    .value-card p  { font-size:.86rem; color:var(--text2); line-height:1.6; }
+
+    /* ── CONTACT ── */
+    .media-contact {
+      display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;
+    }
+    .mc-card {
+      background:var(--bg-card); border:1.5px solid var(--border);
+      border-radius:var(--radius-lg); padding:2rem;
+      display:flex; align-items:flex-start; gap:1.25rem;
+      box-shadow:var(--shadow);
+    }
+    .mc-icon {
+      width:46px; height:46px; border-radius:12px;
+      background:var(--accent-t); display:flex; align-items:center;
+      justify-content:center; color:var(--accent); font-size:1.1rem; flex-shrink:0;
+    }
+    .mc-card strong { display:block; font-size:.9rem; margin-bottom:.3rem; }
+    .mc-card a, .mc-card span { display:block; color:var(--text2); font-size:.88rem; line-height:1.7; }
+    .mc-card a:hover { color:var(--accent); }
+
+    /* ── FOOTER ── */
+    .mk-footer {
+      background:var(--bg2); border-top:1.5px solid var(--border);
+      padding:1.5rem; text-align:center;
+    }
+    .mk-footer p { color:var(--text2); font-size:.84rem; }
+    .mk-footer a { color:var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:900px) {
+      .about-grid   { grid-template-columns:1fr; }
+      .logo-grid    { grid-template-columns:1fr 1fr; }
+      .colors-grid  { grid-template-columns:repeat(3,1fr); }
+      .values-grid  { grid-template-columns:1fr 1fr; }
+      .media-contact{ grid-template-columns:1fr; }
+      .type-showcase{ grid-template-columns:1fr; }
+      .type-block + .type-block { border-left:none; padding-left:0; border-top:2px solid var(--border); padding-top:2rem; }
+    }
+    @media(max-width:600px) {
+      .hero { padding:3.5rem 1rem 3rem; }
+      .logo-grid   { grid-template-columns:1fr; }
+      .colors-grid { grid-template-columns:repeat(2,1fr); }
+      .values-grid { grid-template-columns:1fr; }
+      .stat-row    { grid-template-columns:repeat(2,1fr); }
+      .hero-cta    { flex-direction:column; align-items:center; }
+      .btn         { width:100%; justify-content:center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <i class="fas fa-compass"></i>
+      <span>Event Holidays</span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <a href="index.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Site</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag"><i class="fas fa-download"></i> &nbsp;Official Media Kit</span>
+      <div class="hero-logo">
+        <img src="logo-dark.svg" alt="Event Holidays Logo" height="70">
+      </div>
+      <h1>Event Holidays<br>Media Kit</h1>
+      <p>Everything you need to feature or collaborate with Event Holidays — logos, brand guidelines, company facts, and contact details.</p>
+      <div class="hero-cta">
+        <a href="#logos" class="btn btn-primary"><i class="fas fa-download"></i> Download Assets</a>
+        <a href="#contact" class="btn" style="background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.3)"><i class="fas fa-envelope"></i> Media Enquiry</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="sh">
+        <span class="sh-tag">Who We Are</span>
+        <h2>Company Overview</h2>
+        <p>Key facts and figures about Event Holidays for press and partner use.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3><i class="fas fa-info-circle"></i> Company Facts</h3>
+          <div class="fact-list">
+            <div class="fact-item"><span class="fact-label">Legal Name</span><span class="fact-value">Event Holidays</span></div>
+            <div class="fact-item"><span class="fact-label">Founded</span><span class="fact-value">2014</span></div>
+            <div class="fact-item"><span class="fact-label">Headquarters</span><span class="fact-value">D-5A Jaipur Towers, M.I. Road, Jaipur 302003, Rajasthan, India</span></div>
+            <div class="fact-item"><span class="fact-label">Industry</span><span class="fact-value">Travel & Tourism</span></div>
+            <div class="fact-item"><span class="fact-label">Specialisation</span><span class="fact-value">Domestic & International Group Tours, Visa Assistance, Air Ticketing</span></div>
+            <div class="fact-item"><span class="fact-label">Website</span><span class="fact-value"><a href="https://eventholidays.in" style="color:var(--accent)">eventholidays.in</a></span></div>
+            <div class="fact-item"><span class="fact-label">Email</span><span class="fact-value">indigo.holidays@yahoo.co.in</span></div>
+            <div class="fact-item"><span class="fact-label">Phone</span><span class="fact-value">+91 98283 64494</span></div>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3><i class="fas fa-chart-bar"></i> Key Statistics</h3>
+          <div class="stat-row">
+            <div class="stat-box"><div class="num">10K+</div><div class="lbl">Happy Travellers</div></div>
+            <div class="stat-box"><div class="num">150+</div><div class="lbl">Destinations</div></div>
+            <div class="stat-box"><div class="num">12+</div><div class="lbl">Years Experience</div></div>
+            <div class="stat-box"><div class="num">98%</div><div class="lbl">Satisfaction Rate</div></div>
+          </div>
+          <br>
+          <h3 style="margin-top:.5rem"><i class="fas fa-globe"></i> Destinations We Cover</h3>
+          <p style="font-size:.88rem;color:var(--text2);line-height:1.75;margin-top:.75rem">
+            Dubai · Europe · Singapore · Maldives · Thailand · Vietnam · India · Indonesia · Baku · Turkey · Greece · Japan · Malaysia · Almaty · and 130+ more destinations worldwide.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LOGOS ── -->
+  <section class="section section-alt" id="logos">
+    <div class="container">
+      <div class="sh">
+        <span class="sh-tag">Brand Assets</span>
+        <h2>Logo Downloads</h2>
+        <p>Use these logos as supplied. Do not alter colours, proportions, or add effects.</p>
+      </div>
+      <div class="logo-grid">
+
+        <!-- Primary (light bg) -->
+        <div class="logo-card">
+          <div class="logo-preview light-bg">
+            <img src="logo.svg" alt="Event Holidays Logo – Light">
+          </div>
+          <h4>Primary Logo</h4>
+          <p>Use on white or light backgrounds</p>
+          <div class="btns">
+            <a href="logo.svg" download class="dl-btn"><i class="fas fa-download"></i> SVG</a>
+          </div>
+        </div>
+
+        <!-- Dark version -->
+        <div class="logo-card">
+          <div class="logo-preview dark-bg">
+            <img src="logo-dark.svg" alt="Event Holidays Logo – Dark">
+          </div>
+          <h4>Dark / Reversed Logo</h4>
+          <p>Use on dark or coloured backgrounds</p>
+          <div class="btns">
+            <a href="logo-dark.svg" download class="dl-btn"><i class="fas fa-download"></i> SVG</a>
+          </div>
+        </div>
+
+        <!-- Icon -->
+        <div class="logo-card">
+          <div class="logo-preview blue-bg">
+            <img src="logo-icon.svg" alt="Event Holidays Icon">
+          </div>
+          <h4>Icon / App Mark</h4>
+          <p>For social avatars, favicons, square formats</p>
+          <div class="btns">
+            <a href="logo-icon.svg" download class="dl-btn"><i class="fas fa-download"></i> SVG</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Usage rules -->
+      <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:2rem;margin-top:1.5rem;box-shadow:var(--shadow)">
+        <h3 style="font-size:1rem;margin-bottom:1rem;display:flex;align-items:center;gap:.6rem">
+          <i class="fas fa-exclamation-circle" style="color:var(--accent)"></i> Logo Usage Rules
+        </h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div>
+            <p style="font-size:.82rem;font-weight:700;color:#22c55e;margin-bottom:.5rem"><i class="fas fa-check"></i> DO</p>
+            <ul style="font-size:.84rem;color:var(--text2);display:flex;flex-direction:column;gap:.4rem;padding-left:1rem">
+              <li>Use the SVG file at any size</li>
+              <li>Maintain clear space equal to the compass icon width on all sides</li>
+              <li>Use the dark version on dark/coloured backgrounds</li>
+              <li>Reproduce in full colour whenever possible</li>
+            </ul>
+          </div>
+          <div>
+            <p style="font-size:.82rem;font-weight:700;color:#ef4444;margin-bottom:.5rem"><i class="fas fa-times"></i> DON'T</p>
+            <ul style="font-size:.84rem;color:var(--text2);display:flex;flex-direction:column;gap:.4rem;padding-left:1rem">
+              <li>Stretch, distort, or rotate the logo</li>
+              <li>Change the brand colours</li>
+              <li>Add drop shadows, outlines, or effects</li>
+              <li>Place on busy backgrounds without sufficient contrast</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COLOURS ── -->
+  <section class="section" id="colors">
+    <div class="container">
+      <div class="sh">
+        <span class="sh-tag">Brand Identity</span>
+        <h2>Colour Palette</h2>
+        <p>Our primary palette ensures consistency and recognition across all materials.</p>
+      </div>
+      <div class="colors-grid">
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#4a72ff"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Brand Blue</span>
+            <span class="swatch-hex">#4A72FF</span>
+            <span class="swatch-use">Primary accent, CTAs</span>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#7c9fff"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Blue Light</span>
+            <span class="swatch-hex">#7C9FFF</span>
+            <span class="swatch-use">Gradients, highlights</span>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#c5d5fb"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Blue Tint</span>
+            <span class="swatch-hex">#C5D5FB</span>
+            <span class="swatch-use">Backgrounds, tags</span>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#454545"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Charcoal</span>
+            <span class="swatch-hex">#454545</span>
+            <span class="swatch-use">Primary text</span>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#808080"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Grey</span>
+            <span class="swatch-hex">#808080</span>
+            <span class="swatch-use">Secondary text</span>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="swatch-block" style="background:#fafbff;border-bottom:1px solid #d3d3d3"></div>
+          <div class="swatch-info">
+            <span class="swatch-name">Off White</span>
+            <span class="swatch-hex">#FAFBFF</span>
+            <span class="swatch-use">Page background</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TYPOGRAPHY ── -->
+  <section class="section section-alt" id="typography">
+    <div class="container">
+      <div class="sh">
+        <span class="sh-tag">Brand Identity</span>
+        <h2>Typography</h2>
+        <p>We use a single typeface across all digital and print assets.</p>
+      </div>
+      <div class="type-showcase">
+        <div class="type-block">
+          <p class="type-label">Primary Typeface</p>
+          <div class="type-sample-xl">Urbanist</div>
+          <div class="type-sample-h1">Heading One</div>
+          <div class="type-sample-h2">Heading Two</div>
+          <div class="type-sample-body">Body copy — the quick brown fox jumps over the lazy dog. Urbanist is a modern geometric sans-serif that pairs warmth with professionalism.</div>
+          <div class="type-sample-sm">Small caps label · Tag · Caption</div>
+        </div>
+        <div class="type-block">
+          <p class="type-label">Weight Scale</p>
+          <div class="weight-row">
+            <div class="weight-item"><span>300</span><span style="font-weight:300;font-size:1.3rem">Light — destination details</span></div>
+            <div class="weight-item"><span>400</span><span style="font-weight:400;font-size:1.3rem">Regular — body paragraphs</span></div>
+            <div class="weight-item"><span>500</span><span style="font-weight:500;font-size:1.3rem">Medium — nav links</span></div>
+            <div class="weight-item"><span>600</span><span style="font-weight:600;font-size:1.3rem">SemiBold — labels, CTAs</span></div>
+            <div class="weight-item"><span>700</span><span style="font-weight:700;font-size:1.3rem">Bold — section headings</span></div>
+            <div class="weight-item"><span>800</span><span style="font-weight:800;font-size:1.3rem">ExtraBold — hero titles</span></div>
+          </div>
+          <p style="margin-top:1.5rem;font-size:.82rem;color:var(--text2)">
+            <strong>Google Fonts:</strong> <a href="https://fonts.google.com/specimen/Urbanist" target="_blank" rel="noopener" style="color:var(--accent)">fonts.google.com/specimen/Urbanist</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BRAND VOICE ── -->
+  <section class="section" id="voice">
+    <div class="container">
+      <div class="sh">
+        <span class="sh-tag">Brand Identity</span>
+        <h2>Brand Values & Voice</h2>
+        <p>How we speak and what we stand for — for editorial and partnership alignment.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🧭</div>
+          <h4>Trust & Transparency</h4>
+          <p>No hidden fees, honest itineraries. We treat every traveller like family — with full clarity on costs and plans.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h4>Personalised Experiences</h4>
+          <p>Every trip is tailored. We listen first, then design journeys that match real preferences and budgets.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🌍</div>
+          <h4>India at Heart, Global in Reach</h4>
+          <p>Proudly based in Jaipur, we serve Indian travellers exploring the world with cultural sensitivity and local insight.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h4>Community-Led Travel</h4>
+          <p>Our group tours foster genuine friendships. Travellers return not just for destinations, but for the joy of journeying together.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">⚡</div>
+          <h4>Responsive & Reliable</h4>
+          <p>We respond within 2 hours, support clients 24/7, and handle every detail from visa to the last airport transfer.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💎</div>
+          <h4>Value Without Compromise</h4>
+          <p>Best-price guarantee with premium service. We believe great travel shouldn't cost a premium it doesn't deserve.</p>
+        </div>
+      </div>
+      <!-- Brand voice tone -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem">
+        <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;box-shadow:var(--shadow)">
+          <h4 style="margin-bottom:1rem;display:flex;align-items:center;gap:.5rem"><i class="fas fa-comment-dots" style="color:var(--accent)"></i> Tone of Voice</h4>
+          <div style="display:flex;flex-wrap:wrap;gap:.5rem">
+            <span style="padding:.3rem .9rem;border-radius:50px;background:var(--accent-t);color:var(--accent);font-size:.8rem;font-weight:600">Warm</span>
+            <span style="padding:.3rem .9rem;border-radius:50px;background:var(--accent-t);color:var(--accent);font-size:.8rem;font-weight:600">Confident</span>
+            <span style="padding:.3rem .9rem;border-radius:50px;background:var(--accent-t);color:var(--accent);font-size:.8rem;font-weight:600">Honest</span>
+            <span style="padding:.3rem .9rem;border-radius:50px;background:var(--accent-t);color:var(--accent);font-size:.8rem;font-weight:600">Inspiring</span>
+            <span style="padding:.3rem .9rem;border-radius:50px;background:var(--accent-t);color:var(--accent);font-size:.8rem;font-weight:600">Accessible</span>
+            <span style="padding:.3rem .9rem;border-radius:50px;background:var(--accent-t);color:var(--accent);font-size:.8rem;font-weight:600">Professional</span>
+            <span style="padding:.3rem .9rem;border-radius:50px;background:var(--accent-t);color:var(--accent);font-size:.8rem;font-weight:600">Community-driven</span>
+          </div>
+        </div>
+        <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.75rem;box-shadow:var(--shadow)">
+          <h4 style="margin-bottom:1rem;display:flex;align-items:center;gap:.5rem"><i class="fas fa-pen" style="color:var(--accent)"></i> Editorial Notes</h4>
+          <ul style="font-size:.86rem;color:var(--text2);display:flex;flex-direction:column;gap:.55rem;padding-left:1rem">
+            <li>Always write <strong style="color:var(--text)">Event Holidays</strong> — not "event holidays" or "EVENT HOLIDAYS"</li>
+            <li>Company is based in <strong style="color:var(--text)">Jaipur, Rajasthan, India</strong></li>
+            <li>Founded in <strong style="color:var(--text)">2014</strong></li>
+            <li>Refer to clients as <strong style="color:var(--text)">"travellers"</strong> not "customers"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES SUMMARY ── -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="sh">
+        <span class="sh-tag">What We Do</span>
+        <h2>Services at a Glance</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem">
+        <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.85rem">
+          <span style="font-size:1.5rem">✈️</span>
+          <div><strong style="font-size:.92rem">Air Ticketing</strong><p style="font-size:.8rem;color:var(--text2);margin-top:.15rem">Domestic & international flights</p></div>
+        </div>
+        <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.85rem">
+          <span style="font-size:1.5rem">🗺️</span>
+          <div><strong style="font-size:.92rem">Tour Packages</strong><p style="font-size:.8rem;color:var(--text2);margin-top:.15rem">India & international group/private tours</p></div>
+        </div>
+        <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.85rem">
+          <span style="font-size:1.5rem">📋</span>
+          <div><strong style="font-size:.92rem">Visa Assistance</strong><p style="font-size:.8rem;color:var(--text2);margin-top:.15rem">50+ countries, end-to-end processing</p></div>
+        </div>
+        <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.85rem">
+          <span style="font-size:1.5rem">🚗</span>
+          <div><strong style="font-size:.92rem">Transportation</strong><p style="font-size:.8rem;color:var(--text2);margin-top:.15rem">Airport transfers, coaches, private cabs</p></div>
+        </div>
+        <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.85rem">
+          <span style="font-size:1.5rem">🏨</span>
+          <div><strong style="font-size:.92rem">Hotel Booking</strong><p style="font-size:.8rem;color:var(--text2);margin-top:.15rem">Budget to 5-star stays worldwide</p></div>
+        </div>
+        <div style="background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.85rem">
+          <span style="font-size:1.5rem">🛡️</span>
+          <div><strong style="font-size:.92rem">Travel Insurance</strong><p style="font-size:.8rem;color:var(--text2);margin-top:.15rem">Medical, cancellation & baggage cover</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MEDIA CONTACT ── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="sh">
+        <span class="sh-tag">Get in Touch</span>
+        <h2>Media & Partnership Contact</h2>
+        <p>For press enquiries, collaborations, content partnerships, or interview requests.</p>
+      </div>
+      <div class="media-contact">
+        <div class="mc-card">
+          <div class="mc-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:indigo.holidays@yahoo.co.in">indigo.holidays@yahoo.co.in</a>
+          </div>
+        </div>
+        <div class="mc-card">
+          <div class="mc-icon"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <strong>Phone / WhatsApp</strong>
+            <a href="https://wa.me/919828364494">+91 98283 64494</a>
+          </div>
+        </div>
+        <div class="mc-card">
+          <div class="mc-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <strong>Office Address</strong>
+            <span>D-5A Jaipur Towers, M.I. Road</span>
+            <span>Jaipur 302003, Rajasthan, India</span>
+          </div>
+        </div>
+        <div class="mc-card">
+          <div class="mc-icon"><i class="fas fa-globe"></i></div>
+          <div>
+            <strong>Website</strong>
+            <a href="https://eventholidays.in">eventholidays.in</a>
+            <span style="margin-top:.4rem;font-size:.78rem">Response within 2 business hours</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="mk-footer">
+    <p>© 2026 Event Holidays · Jaipur, India · <a href="index.html">Back to website</a> · All logos and brand assets are property of Event Holidays. For authorised use only.</p>
+  </div>
+
+  <script>
+    const btn  = document.getElementById('themeBtn');
+    const icon = document.getElementById('themeIcon');
+    const html = document.documentElement;
+    const saved = localStorage.getItem('ht-theme') || 'light';
+    html.setAttribute('data-theme', saved);
+    icon.className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    btn.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('ht-theme', next);
+      icon.className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    });
+  </script>
+</body>
+</html>
